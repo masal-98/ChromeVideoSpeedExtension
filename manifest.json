@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "faster youtube",
+  "version": "1.0",
+  "description": "make the funny videos go faster",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "host_permissions": ["https://*.youtube.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/bookmark.png",
+        "images/play.png",
+        "images/delete.png",
+        "images/save.png"
+      ],
+      "matches": ["https://*.youtube.com/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "faster youtube",
+    "default_popup": "popup.html"
+
+  }
+}

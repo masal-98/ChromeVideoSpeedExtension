@@ -1,0 +1,29 @@
+body {
+    line-height: 0;
+    margin: 10px;
+    width: 350px;
+    height: 130px;
+}
+#speedbtn {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    margin: 4px 4px;
+    padding: 14px 40px;/*space between vuttons, 1st vertical, 2nd horizontal*/
+    text-align: center; /* Center the text horizontally */
+    line-height: 0px; /* Set line-height to the button height */
+}
+#speedbtn:hover {
+    background-color:#B7C9E2;
+    transition: 0.7s;
+}
+#speedbtn:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    background-color: #6699CC;
+}
+
