@@ -18,12 +18,17 @@ body {
     line-height: 0px; /* Set line-height to the button height */
 }
 #speedbtn:hover {
-    background-color:#B7C9E2;
+    background-color:#ff7878;
     transition: 0.7s;
+    color: white;
 }
 #speedbtn:focus {
     outline-color: transparent;
     outline-style:solid;
-    background-color: #6699CC;
+    background-color: #ff7878;
+    color: white;
 }
-
+#speedbtn.active {
+    background-color: red;
+    color: white;
+}
